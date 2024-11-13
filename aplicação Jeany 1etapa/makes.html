@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquiagens</title>
+    <link rel="stylesheet" href="css/make.css">
+</head>
+<body>
+    <main>
+        <form action="" method="get" onsubmit="event.preventDefault(); comprar()">
+            <table>
+                <tr>
+                    <td><img src="img/básica.jpg" alt="makebásica"></td>
+                    <td>Maquiagem Básica</td>
+                    <td>R$150</td>
+                    <td><input type="number" name="basica" id="basica" value="0" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/rebocao.jpg" alt="makerebocao"></td>
+                    <td>Maquiagem Rebocão</td>
+                    <td>R$200</td>
+                    <td><input type="number" name="rebocao" id="rebocao" value="0" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/artistica.jpg" alt="makeartistica"></td>
+                    <td>Maquiagem Artística</td>
+                    <td>R$300</td>
+                    <td><input type="number" name="artistica" id="artistica" value="0" min="0" max="1"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Comprar">
+        </form>
+    </main>
+
+    <aside id="result">
+        <h2>Orçamento final</h2>
+
+        <ul id="lista">
+            
+        </ul>
+        <hr>
+
+        <p id="resp">
+
+        </p>
+    </aside>
+    
+    <script src="make.js"></script>
+</body>
+</html>

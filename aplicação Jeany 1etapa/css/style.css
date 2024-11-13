@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --roxo1:rgb(103, 12, 189);
+    --roxo2: rgb(154, 87, 216);
+    --preto: #0E0B16;
+    --cinca: #E7DFDD;
+    --branco: #fff;
+}
+
+/*header*/
+header{
+    background-color: var(--roxo1);
+    color: var(--branco);
+    height: 80px;
+}
+
+nav{
+    display: flex;
+}
+
+#botão-header{
+    color: var(--branco);
+    background-color: var(--preto);
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#botão-header:hover{
+    background-color: var(--roxo2);
+    transform: scale(1.1);
+    margin: 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*main*/
+main{
+    background-color: var(--roxo2);
+    color: var(--preto);
+    height: 750px;
+}
+
+h1{
+    color: var(--branco);
+    text-align: center;
+    padding: 30px;
+}
+
+/*formulário*/
+form{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    
+}
+
+label, input {
+    display: block;
+    color: var(--preto);
+}
+
+
+label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+input[type='radio']{
+    width: 0.8em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+
+#horario{
+    display: flex;
+}
+
+input[type='checkbox']{
+    width: 0.8em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+
+#opcionais{
+    display: flex;
+}
+
+#saida{
+    font-family: "arial black";
+}
+
+#botão-enviar{
+    width: 80px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#botão-enviar:hover{
+    background-color: var(--roxo1);
+    color: var(--branco);
+}
+
+/*maquiagens*/
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+a:hover{
+    color: var(--branco);
+}
+
+#botaomakes{
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    display: block;
+    margin: 20px auto;
+}
+#botaomakes:hover{
+    background-color: var(--roxo1);
+    transform: scale(1.1);
+}
+
+/*footer*/
+footer{
+    background-color: var(--roxo1);
+    color: var(--branco);
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto;
+    text-align: center;
+}

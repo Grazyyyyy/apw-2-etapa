@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --roxo1:rgb(103, 12, 189);
+    --roxo2: rgb(154, 87, 216);
+    --preto: #0E0B16;
+    --cinca: #E7DFDD;
+    --branco: #fff;
+}
+
+body{
+    background-color: var(--roxo2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*main*/
+main, aside{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.413);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*tabela*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(238, 238, 238);
+}
+
+table tr:nth-child(even){
+    background-color: rgb(219, 219, 219);
+}
+
+table td{
+    padding: 8px 15px;
+}
+
+table img{
+    width: 100px;
+}
+
+/*formulário*/
+form input[type=submit]{
+    margin-top: 10px;
+    background-color: var(--preto);
+    padding: 5px 20px;
+    color: var(--branco);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    float: right;
+}
+
+form input[type=submit]:hover{
+    background-color: var(--roxo1);
+    color: var(--branco);
+    transform: scale(1.1);
+}
+
+form input[type=number]{
+    font-size: 1.3em;
+    color: rgb(76, 76, 76);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button id="botão-header"><li>Home</li></button>
+                <button id="botão-header"><li>Dúvidas</li></button>
+                <button id="botão-header"><li>Contatos</li></button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Agende aqui seu horário:</h1>
+
+        <form name = "form" action="">
+            <!--nome-->
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="digite seu nome" required>
+            
+            <!--telefone-->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone" required>
+
+            <!--dia-->
+                <label for="data">Dia:</label>
+                <input type="date" name="data" id="data" placeholder="digite o dia que quer agendar" required>
+
+            <section id="horario">
+                <!--horário-->
+                    <label for="horario">Horário:</label>
+                <!--1º horário-->
+                    <input type="radio" name="hora" id="08h" value="08-10h" required>
+                    <label for="08h">08h-10h</label>
+                <!--2º horário-->
+                    <input type="radio" name="hora" id="13h" value="13-15h" required>
+                    <label for="13h">13h-15h</label>
+                
+                <!--3º horário-->
+                    <input type="radio" name="hora" id="16h" value="16-18h" required>
+                    <label for="16h">16h-18h</label>
+                <!--4º horário-->
+                    <input type="radio" name="hora" id="19h" value="19-21h" required>
+                    <label for="19h">19h-21h</label>
+            </section>
+
+            <section id="opcionais">
+                <label for="opcionais">Opcionais</label>
+                <input type="checkbox" name="cabelo" id="cabelo" onchange="calc(150,this.checked)" required> Só lavagem no cabelo
+                <input type="checkbox" name="limpeza" id="limpeza" onchange="calc(350,this.checked)"> Limpeza de Pele
+                <input type="checkbox" name="massagem" id="massagem" onchange="calc(300,this.checked)"> Massagem
+                <input type="checkbox" name="manicure" id="manicure" onchange="calc(250,this.checked)"> Manicure e Pedicure
+            </section>
+
+            <!--saidas-->
+            <p id="saida">R$<output id="total">0</output></p>
+
+            <p id="saida2"><output id="sa"></output></p>
+
+            <button type="submit" id="botão-enviar">Enviar</button>
+        </form>
+
+        <section id="makes"><button id="botaomakes"> <a href="makes.html">Maquiagens</a></button></section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - @grazyy-veras</p>
+    </footer>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
